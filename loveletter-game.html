@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Fun lil' yeehan-inspired game where you help Hanzito to make a perfect gift for Colecito">
+        <meta name="keywords" content="yeehan, YeeHan, YeeHanWipWeek2025">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Jaro' rel='stylesheet'>
+
+        <title>Chocolates for My Dear</title>
+        <link rel="icon" type="image/x-icon" href="images/icon/iconV2.ico">
+
+    </head>
+    <body>
+        <script type="module" src="final-game-script.js"></script>
+        <script type="module" src="dialogue.js"></script>
+
+        <div class="middle"> 
+            <div class ="game-border">
+                <div class="dialogue-header">
+                    <div class="dialogue-box">
+                        <img src="images/game-vectors/dialogueBox.svg" class="dialogue-box-image">
+                        <h1 class="dialogue-name">Hanzito ~</h1>
+                        <h2 class="dialogue-chat"></h2> 
+                    </div>
+                    <div class="hanzo-corner">
+                        <img src="images/game-vectors/Hanzo.svg" id="hanzo-image">
+                    </div>
+                </div>
+                <div class="game-box">
+                    <div class="loveletter-game-box">
+                        <img class="loveletter-box-image" src="images/game-vectors/loveletter.svg">
+                        <div class="loveletter-text">
+
+                            <div class="loveletter-container" id="first-container">
+                                <div class="first-line">To</div>
+                                <div class="dropdown" id="title-dropdown"> 
+                                    <button class="select">_________________</button>
+                                    <div class="content">
+                                        <a href="#" class="option" id="2">Colecito</a>
+                                        <a href="#" class="option" id="3">My Love</a>
+                                        <a href="#" class="option" id="5">My Dearest Darling</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="loveletter-container"> 
+                                <div class="second-line">&emsp; It is otherworldly I have met you in this lifetime.</div>
+                            </div>
+                            <div class="loveletter-container"> 
+                                <div class="third-line">You are</div>
+                                <div class="dropdown" id="first-dropdown"> 
+                                    <button class="select">____________________________________</button>
+                                    <div class="content">
+                                        <a href="#" class="option">the cherry blossoms that falls down to me</a>
+                                        <a href="#" class="option">the soothing symphony that sings me</a>
+                                        <a href="#" class="option">the morning green tea that wakes me</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="loveletter-container"> 
+                                <div class="forth-line">into ease. You are the</div>
+                                <div class="dropdown" id="second-dropdown"> 
+                                    <button class="select">_____</button>
+                                    <div class="content">
+                                        <a href="#" class="option">sun</a>
+                                        <a href="#" class="option">star</a>
+                                        <a href="#" class="option">light</a>
+                                    </div>
+                                </div>
+                                <div class="third-line" style="margin-left: 8px;">during my gloomy days.</div>
+                            </div>
+
+                            <div class="loveletter-container"> 
+                                You are my other half, the one I would sacrifice for.
+                            </div>
+
+                            <div class="loveletter-container"> 
+                                The love that I carry for you goes greater than me.
+                            </div>
+
+                            <div class="loveletter-container"> 
+                                <div class="fifth-line">A love that I will express to you</div>
+                                <div class="dropdown" id="third-dropdown"> 
+                                    <button class="select">__________________</button>
+                                    <div class="content">
+                                        <a href="#" class="option">every single day.</a>
+                                        <a href="#" class="option">every breath I take.</a>
+                                        <a href="#" class="option">every chance I get.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="loveletter-container" id="signature-container"> 
+                                <div class="signature-line">From</div>
+                                <div class="dropdown" id="signature-dropdown"> 
+                                    <button class="select">___________________________</button>
+                                    <div class="content">
+                                        <a href="#" class="option">Hanzito</a>
+                                        <a href="#" class="option">The One You Called Sweetheart</a>
+                                        <a href="#" class="option">Your Love</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="loveletter-button-section">
+                        <div class="game-buttons">
+                            <button type="button" class="game-button" id="loveletter-submit-button">
+                                <img src="images/button/checkmark.svg" width="60px" height="60px">
+                            </button>
+        
+                            <button type="button" class="game-button" id="loveletter-reset-button">
+                                <img src="images/button/Refresh cw.svg" width="60px" height="60px">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    </html>
+<!DOCTYPE html>
+
+    

@@ -1,0 +1,445 @@
+/* For restriction */
+.border{
+    background-color: #E6B2BA;
+    width: 100vw;
+    height: 100vh;
+}
+
+.restriction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    text-align: left;
+    color: #FFF7F3;
+    margin: 5rem auto;
+    padding: 6rem;
+    width: 80vw;
+    max-width: 600px;
+    height: 80vh;
+    
+}
+
+.restriction img{
+    width: 100%; 
+    max-width: 209px; 
+    height: auto;
+}
+
+/* For tablets and smaller */
+@media (max-width: 1200px) {
+    .restriction {
+        margin: 3rem auto;
+        padding: 1.5rem;
+    }
+}
+
+/* For phones */
+@media (max-width: 768px) {
+    .restriction {
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+}
+
+/* Tiny devices */
+@media (max-width: 480px) {
+    .restriction {
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+}
+
+
+@keyframes panUp{
+    from {transform: translate(0px, 20px);}
+    to {transform: translate(0px, 0px);}
+}
+
+@keyframes zoomIn{
+    from {transform: scale(4);}
+    to {transform: scale(01.05);}
+}
+
+
+html, body{
+    background-color: #FFF7F3;
+    font-family: "Jaro", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-optical-sizing: auto;
+    color: #FFF7F3;
+    letter-spacing: 2px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+button{
+    background-color: #FAD0C4;
+    border-radius: 39px;
+    border: 4px solid #FFF7F3;
+    cursor: pointer;
+    color: #FFF7F3;
+    font-family: "Jaro", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title page */
+.index-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 655px;
+}
+
+.title{
+    padding-top: 50px;
+    height: 150px;
+    font-size: 118px;
+    line-height: 109px;
+    text-align: center;
+    color: #FAD0C4;
+    text-shadow:
+        -8px -8px 0 #FFF7F3, 
+        0 -8px 0 #FFF7F3, 
+        8px -8px 0 #FFF7F3, 
+        -8px 0 0 #FFF7F3, 
+        8px 0 0 #FFF7F3, 
+        -8px 8px 0 #FFF7F3,
+        0 8px 0 #FFF7F3, 
+        8px 8px 0 #FFF7F3;   
+
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.start-button{
+    font-size: 32px;
+    width: 150px;
+    animation-name: panUp;
+    animation-duration: 2s;
+}
+
+.start-button:hover{
+    opacity: 80%;
+}
+
+.yeehan{
+    position: relative;;
+    width: 100%;
+    height: 300px;
+
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.yeehan img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Endgame page */
+.endgame-img{
+    width: 100%;
+    height: 42.1%;
+    position: relative;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.endgame-img img{
+    position: absolute;
+    top: 55%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    margin: 20px 0;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    font-size: 96px;
+    margin: 10px 0;
+
+    animation-name: zoomIn;
+    animation-duration: 2s;
+}
+
+.score-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-size: 48px;
+    margin: 20px 0;
+    animation-name: panUp;
+    animation-duration: 2s;
+}
+
+.endgame-button-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    animation-name: panUp;
+    animation-duration: 2s;
+    
+}
+
+.try-again{
+    font-size: 32px;
+    width: 20%;
+    height: 50%;
+}
+
+.try-again:hover{
+    opacity: 80%;
+
+}
+
+/* Creation page */
+.creation-button-section{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    gap: 200px;
+    animation-name: panUp;
+    animation-duration: 2s;
+}
+
+.creations{
+    font-size: 32px;
+    width: 28%;
+    height: 50%;
+
+}
+
+.creations:hover{
+    opacity: 80%;
+
+}
+
+.final-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 80px;
+    color: #FAD0C4;
+    text-shadow:
+        -5px -5px 0 #FFF7F3, 
+        0 -5px 0 #FFF7F3, 
+        5px -5px 0 #FFF7F3, 
+        -5px 0 0 #FFF7F3, 
+        5px 0 0 #FFF7F3, 
+        -5px 5px 0 #FFF7F3,
+        0 5px 0 #FFF7F3, 
+        5px 5px 0 #FFF7F3;   
+
+    height: 100px;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+#creation-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.back-button {
+    height: 52px;
+    padding: 0px 50px;
+    font-size: 32px;
+}
+
+.final-prod{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+    animation-name: panUp;
+    animation-duration: 2s;
+}
+
+/* Final output for chocolate box */
+.final-chocolate-box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.final-chocolate-box-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+}
+
+.final-chocolate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 75px;
+    cursor: default;
+    margin: 8px;
+}
+
+.final-first-row, .final-second-row, .final-third-row {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.final-first-row, .final-second-row{
+    margin-bottom: 4px;
+}
+
+
+.final-container{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Final output for loveletter box */
+.final-loveletter-game-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+}
+
+.final-loveletter-box-image{
+    position: absolute;
+    width: 580px;
+    height: 350px;
+}
+
+.final-loveletter-text {
+    position: relative;
+    font-size: 18px;
+    display: block;
+    width: 550px;
+    height: 328px;
+    word-wrap: break-word;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.final-loveletter-container{
+    vertical-align: top;
+    display: flex; 
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 5px;
+}
+
+#final-first-container{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#final-signature-container{
+    margin-top: 20px;
+    display: flex; 
+}
+
+.final-first-line{
+    display: inline;
+    width: 30px;
+}
+
+.final-dropdown button{
+    display: inline;
+    background-color: #FAD0C4;
+    border-radius: 10px;
+    border: 3px solid #FFF7F3;
+    color: #FFF7F3;
+    font-family: "Jaro", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    cursor: default;
+    animation-name: none;
+}
+
+.final-select:hover{
+    opacity: 100%;
+    transform: none;
+}
+
+
+/* Twitter icon */
+.twitter-handle, .creation-twitter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 5px;
+    margin-left: 40px;
+    height: 30px;
+    animation-name: panUp;
+    animation-duration: 2s;
+}
+
+.creation-twitter{
+    align-self: flex-end;
+}
+
+.at{
+    display: flex;
+    flex-direction: row;
+    color: #FFF7F3;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+}
+
+.at a{
+    font-size: 25px;
+    color: #FFF7F3;
+    text-decoration: none;
+    
+}
